@@ -8,6 +8,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class GraphImplementation {
+
+
     public void dfs(Node root) {
         //Avoid infinite loops
         if (root == null) return;

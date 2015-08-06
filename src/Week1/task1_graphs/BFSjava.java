@@ -27,37 +27,6 @@ public class BFSjava {
         }
     }
 
-    public static Node findDfs(Node root, int element) {
-        // #1: Initialize queue (q)
-        Queue<Node> q = new ConcurrentLinkedQueue<>(); // some queue
-        // implementation
-        // #2: Push root node to queue
-        q.add(root);
-
-        // #3: While queue not empty
-        while (!q.isEmpty()) {
-            // #:4 Dequeue n
-            Node n = q.poll();
-            // visit this node
-            n.visited = true;
-            System.out.println(n.value);
-            // #5: If n == required_node, return n;
-            if (n.value == element)
-                return n;
-
-            // #5: foreach vertices v of n
-            for (Node v : n.vertices) {
-                // #6: if v is visited, continue
-                if (v.visited)
-                    continue;
-                // #7: else enque v
-                q.add(v);
-            }
-        }
-        // #8: return null;
-        return null; // cannot find element
-    }
-
     public static Node findBfs(Node root, int element) {
         // #1: Initialize queue (q)
         Queue<Node> q = new ConcurrentLinkedQueue<>(); // some queue
