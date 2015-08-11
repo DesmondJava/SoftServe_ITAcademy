@@ -27,6 +27,7 @@ public class Main {
         List<Employee> employeeList = new ArrayList<>();
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
+        /* Creating employeers by typing from keyboard*/
         while (true) {
             System.out.println("Do you wanna create Senior Employee or Junior Employee? Type 'senior' or 'junior'");
             String who = console.readLine();
