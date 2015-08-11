@@ -18,14 +18,14 @@ public abstract class Employee implements Worker, Comparable {
 
         int checkCorrect = age - seniority;
         int minOldForJob = 16;
-        if (age < 3) {
+        if (age < 16) {
             System.out.println("You typed incorrect age, pls check it");
-            throw new IllegalArgumentException("incorrect type");
+            throw new MyExceptionIlligalArgument("incorrect type");
         }
         if (checkCorrect < minOldForJob) {
             System.out.println("You typed incorrect seniority, pls check it because you could not work " +
                     "earlier than you were sixteen years old");
-            throw new IllegalArgumentException("incorrect type");
+            throw new MyExceptionIlligalArgument("incorrect type");
         }
     }
 

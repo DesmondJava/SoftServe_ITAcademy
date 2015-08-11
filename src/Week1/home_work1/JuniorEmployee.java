@@ -1,8 +1,7 @@
 package Week1.home_work1;
 
-/**
- * Created by Администратор on 08.08.2015.
- */
+
+
 public class JuniorEmployee extends Employee implements Comparable {
 
     public JuniorEmployee(String name, int age, int seniority, int hours) {
