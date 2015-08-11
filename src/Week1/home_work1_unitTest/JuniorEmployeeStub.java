@@ -1,29 +1,21 @@
 package Week1.home_work1_unitTest;
 
+import Week1.home_work1.Employee;
 import Week1.home_work1.Worker;
 import org.testng.annotations.Test;
 
-public class JuniorEmployeeStub implements Worker {
+public class JuniorEmployeeStub extends Employee implements Worker {
 
 
-    @Override
-    public String getName() {
-        return null;
-    }
-
-    @Override
-    public int getAge() {
-        return 0;
-    }
-
-    @Override
-    public int getSeniority() {
-        return 0;
+    public JuniorEmployeeStub() {
+        super("Vanya", 44, 15, 789);
     }
 
     @Override
     public double getPayment() {
-        return 0;
+        int start = 500;
+        int iteration = 200;
+        return start + iteration * getSeniority();
     }
 
 

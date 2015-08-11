@@ -15,11 +15,13 @@ public class JuniorEmployeeTest {
 
     @BeforeTest
     public void init(){
-        worker = new JuniorEmployee("Helen", 40, 15, 3002);
+        worker = new JuniorEmployeeStub();
     }
 
     @Test
     public void testGetPayment() throws Exception {
         AssertJUnit.assertEquals(worker.getPayment(), 3500.0);
     }
+
+
 }

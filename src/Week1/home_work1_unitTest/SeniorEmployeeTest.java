@@ -15,7 +15,7 @@ public class SeniorEmployeeTest {
 
     @BeforeTest
     public void init(){
-        worker = new SeniorEmployee("Dimon", 50, 25, 1325);
+        worker = new SeniorEmployeeStub();
     }
 
     @Test
